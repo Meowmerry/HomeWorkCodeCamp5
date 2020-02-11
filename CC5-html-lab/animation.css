@@ -1,0 +1,49 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  background-color: cornsilk;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  
+}
+.container {
+  padding: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box1 {
+  animation: animation-one infinite;
+  animation-duration: 5s;
+  width: 200px;
+  color: grey;
+  border: 1px solid black;
+  text-align: center;
+  height: 200px;
+  background-color: cornflowerblue;
+}
+
+@keyframes animation-one {
+  0% {
+    color: rgb(197, 71, 71);
+    background-color: cornflowerblue;
+    position: relative;
+    top: 100px;
+  }
+  50% {
+    color: rgb(29, 0, 160);
+    background-color: rgb(100, 237, 168);
+    position: relative;
+    top: 200px;
+  }
+  100% {
+    color: rgb(197, 128, 71);
+    background-color: rgb(237, 100, 214);
+    position: relative;
+    top: 300px;
+  }
+}
